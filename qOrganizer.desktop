@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=qOrganizer
+GenericName=General Organizer
+GenericName[pl]=Ogólny organizator
+Icon=qOrganizer
+Exec=qOrganizer
+Terminal=false
+Type=Application
+Categories=Office;Calendar;
