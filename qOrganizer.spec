@@ -1,8 +1,9 @@
 # TODO:
+# - optflags
 # - WARNING! For me this app on secondary run eats all memory
-#   (when he reads configuration/stored data) 
-# - pl description and summary
+#   (when it reads configuration/stored data) 
 Summary:	General organizer
+Summary(pl.UTF-8):	Ogólny organizer
 Name:		qOrganizer
 Version:	3.1
 Release:	0.1
@@ -21,11 +22,18 @@ BuildRequires:	qt4-qmake >= 4.3.3-3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-qOrganizer is a general organizer that includes calendar with jurnal
+qOrganizer is a general organizer that includes calendar with journal
 and schedule for every day in which you can choose to be reminded of
 events, a general to-do list for your tasks and also includes features
 useful for students like timetable and a booklet with marks and
 absences.
+
+%description -l pl.UTF-8
+qOrganizer to ogólny organizer zawierający kalendarz z dziennikiem i
+planem na każdy dzień, z którego można wybierać zdarzenia do
+przypomnienia, ogólną listą zadań do wykonania oraz elementami
+przydatnymi dla uczniów i studentów, takimi jak plan zajęć czy
+notatnik z ocenami i nieobecnościami.
 
 %prep
 %setup -q -n %{name}
